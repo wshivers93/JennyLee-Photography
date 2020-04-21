@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - JennyLeePhotography</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Oswald:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar transparent fixed-top navbar-expand-sm navbar-toggleable-sm">
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-caret-square-down"></i> Menu
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item ml-sm-auto">
+                        <a class="nav-link text-light" asp-area="" asp-page="/Index"><i class="fas fa-home"></i> Home</a>
+                    </li>
+
+                    <li class="nav-item ml-sm-5">
+                        <a class="nav-link text-light" asp-area="" asp-page="/Gallery"><i class="fas fa-camera-retro"></i> Gallery</a>
+                    </li>
+
+                    <li class="nav-item mx-sm-5">
+                        <a class="nav-link text-light" asp-area="" asp-page="/Contact"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+
+                    <li class="nav-item mr-sm-auto">
+                        <a class="nav-link text-light" asp-area="" asp-page="/Bio"><i class="fas fa-book"></i> About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted bg-dark">
+        <div class="container">
+            &copy; 2020 - JennyLeePhotography - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/ecacc70ea0.js" crossorigin="anonymous"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

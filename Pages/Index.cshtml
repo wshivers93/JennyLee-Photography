@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="row vh-100 align-items-center" id="home_1">
+    <div class="col-md-6 text-center text-white">
+        <div id="title">
+            JENNYLEE PHOTOGRAPHY
+        </div>
+
+        <div id="title2">
+            Weddings - Engagements - Lifestyle
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4 text-center p-0 border border-white" id="wedding_tile">
+        <a class="text-white" asp-page="/Gallery" style="text-decoration: none;">
+            <div class="row h-100 align-items-center m-0">
+                <div class="col home_header header_bar p-0">
+                    Weddings
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4 text-center text-white p-0 border border-white" id="engage_tile">
+        <a class="text-white" asp-page="/Gallery" style="text-decoration: none;">
+            <div class="row h-100 align-items-center m-0">
+                <div class="col home_header header_bar p-0">
+                    Engagements
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-md-4 text-center text-white p-0 border border-white" id="lifestyle_tile">
+        <a class="text-white" asp-page="/Gallery" style="text-decoration: none;">
+            <div class="row h-100 align-items-center m-0">
+                <div class="col home_header header_bar p-0">
+                    Lifestyle
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
